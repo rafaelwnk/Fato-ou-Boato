@@ -1,6 +1,6 @@
 const question = document.querySelector('.question');
-const buttonFalse = document.querySelector('.false');
 const buttonTrue = document.querySelector('.true');
+const buttonFalse = document.querySelector('.false');
 const playAgain = document.querySelector('.play-again');
 
 const cache = new Map();
