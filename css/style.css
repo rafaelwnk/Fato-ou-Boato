@@ -1,0 +1,138 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #171717;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    margin: auto;
+    margin-top: 8vh;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+header:hover {
+    letter-spacing: 0.4em;
+    transition: 0.5s;
+    cursor: default;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    width: 40%;
+    max-width: 800px;
+    min-width: 350px;
+    margin: auto;
+    height: 60%;
+    max-height: 60%;
+    min-height: 20%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: #525252 0px 50px 100px -20px, #404040 0px 30px 60px -30px;
+    flex-shrink: 1;
+}
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 45%;
+    margin: 20% 10% 0% 10%;
+    font-style: italic;
+}
+
+.question {
+    display: flex;
+    padding-top: 50px;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.play-again {
+    visibility: hidden;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    padding: 5%;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    height: 40%;
+    box-shadow: #525252 1.95px 1.95px 2.6px;
+    letter-spacing: 0.2em;
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+    min-height: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #171717;
+    transition: 0.5s;
+}
+
+button:active {
+    background: #333333;
+    transition: 0.5s;
+}
+
+.true {
+    background: green;
+}
+
+.true:hover {
+    box-shadow: green 1.95px 1.95px 2.6px;
+}
+
+.false {
+    background: red;
+}
+
+.false:hover {
+    box-shadow: red 1.95px 1.95px 2.6px;
+}
+
+.link {
+    margin: auto;
+    margin-bottom: 10vh;
+}
