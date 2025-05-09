@@ -3,8 +3,6 @@ const buttonTrue = document.querySelector('.true');
 const buttonFalse = document.querySelector('.false');
 const playAgain = document.querySelector('.play-again');
 
-const cache = new Map();
-
 let questions = [];
 let correctAnswer;
 let numberQuestion = parseInt(sessionStorage.getItem('number_question')) || 0;
@@ -27,13 +25,10 @@ const fetchQuestion = async (tk) => {
 }
 
 const fetchTranslate = async (question) => {
-    if (cache.has(question)) return { responseData: { translatedText: cache.get(question) } };
-
     const response = await fetch(`https://api.mymemory.translated.net/get?q=${question}&langpair=en|pt-br&de=fatoouboato.dev@gmail.com`)
         .catch(error => console.error('Erro ao buscar dados:', error));
 
     const data = await response.json();
-    cache.set(question, data.responseData.translatedText);
     return data
 }
 
